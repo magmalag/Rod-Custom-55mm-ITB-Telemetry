@@ -48,3 +48,7 @@ The **Daytona Twin Tec (Alpha-N)** system was used to tune this custom hardware 
 
 ##  Results
 A fully functional and calibrated system that surpasses factory analogs in reliability (stainless steel + hard brass) and aerodynamics. Achieved a perfect idle and a smooth, flat power band up to 9500 RPM.
+
+<img src="Images/IMG_20240316_123650.jpg" width="600">
+
+---
