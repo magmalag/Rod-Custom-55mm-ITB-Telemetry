@@ -41,7 +41,7 @@ Deep modernization, custom 55mm throttle bodies, asymmetric intake calculation, 
 Для настройки нестандартного железа была использована система **Daytona Twin Tec (Alpha-N)**.
 
 * **Data Logging:** Написаны скрипты на Python для парсинга, фильтрации аппаратного шума и агрегации сырых логов.
-* **Синхронизация:** Анализ `MAP Delta` подтвердил идеальную механическую сборку (разница на холостом ходу составила всего 0.03 in-Hg).
+* **Синхронизация:** Анализ `MAP Delta` подтвердил идеальную механическую сборку (разница на холостом ходу составила всего 0.17 in-Hg).
 
 <img src="Telemetry_Logs/map_front-rear_in-hg.png" width="600">
 <img src="Telemetry_Logs/DTT_front_trim_table.png" width="600">
