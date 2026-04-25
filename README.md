@@ -1,51 +1,50 @@
 # VRod-Custom-55.5mm-ITB-Telemetry
 Deep modernization, custom 55mm throttle bodies, asymmetric intake calculation, and Python/Arduino telemetry for H-D V-Rod
-## 📌 О проекте (About the Project)
-Комплексный проект по глубокой модернизации впускной системы двигателя H-D Revolution (1250cc). Включает в себя механическую обработку (Custom Hardware), расчет газодинамики (Engine Simulation) и разработку программно-аппаратного комплекса для сбора и анализа телеметрии.
 
-**Цель:** Переход со штатных 53 мм дросселей на 55 мм с сохранением стабильного холостого хода и максимизацией КПД на 9000 RPM.
+##  About the Project
+A comprehensive project focused on deep modernization of the H-D Revolution (1250cc) engine intake system. It includes custom hardware machining, gas dynamics calculation (Engine Simulation), and the development of a software-hardware suite for telemetry data logging and analysis.
+
+**Goal:** Upgrading from the stock 53mm throttle bodies to 55.5mm while maintaining a stable idle and maximizing volumetric efficiency at 9000 RPM.
 
 ---
 
-## 🛠 Механика и Железо (Hardware & CAD)
-Штатные оси и дроссельные заслонки не выдерживают нагрузок при увеличении диаметра. Узел был спроектирован с нуля:
+##  Hardware & CAD
+Stock throttle shafts and butterfly valves cannot withstand the increased load when the diameter is enlarged. The assembly was designed from scratch:
 
-* **Корпуса:** Расточены до 55 мм.
-* **Оси (Split Shaft):** Кастомная составная ось из нержавеющей стали (8 мм). Фиксация винтов выполнена методом развальцовки стальным шариком (авиационный стандарт) для предотвращения обрыва от вибраций V-Twin.
-* **Заслонки (Butterflies):** Выточены из твердой автоматной латуни (ЛС59-1, 1.5 мм). 
-* **Геометрия:** Смоделирован эллипс под углом 4.5°. В CAD-системе рассчитан и устранен критический зазор в 23 микрона (0.023 мм) возле оси, что обеспечило 100% герметичность при закрытом дросселе (IAC control stabilized).
+* **Throttle Bodies:** Bored out to 55.5mm.
+* **Shafts (Split Shaft):** Custom 8mm stainless steel split shafts. Screws were secured using the ball-staking method (aviation standard) to prevent failure from severe V-Twin vibrations. PTFE bearings were installed for smooth operation.
+* **Butterfly Valves:** Machined from hard free-cutting brass (LS59-1 / CuZn39Pb2 equivalent, 1.5mm thick). 
+* **Geometry:** Modeled as an ellipse at a 4.5° angle. A critical 23-micron (0.023 mm) interference gap near the shaft was calculated and eliminated in CAD, ensuring 100% sealing when the throttle is closed (perfectly stabilizing the IAC control).
 
 <img src="Images/IMG_20260406_121059.jpg" width="600">
 <img src="Images/IMG_20260406_121208.jpg" width="600">
 <img src="Images/IMG_20260406_121253.jpg" width="600">
 <img src="Images/IMG_20260406_122417.jpg" width="600">
 
-
 ---
 
-## 🌪 Газодинамика (Engine Analyzer Pro)
-Двигатель V-Rod имеет разнодлинный выхлоп Rinehart 2-1 (Front 72 см / Rear 85 см). Для компенсации наполнения цилиндров (Volumetric Efficiency) была рассчитана асимметричная впускная система:
+##  Gas Dynamics & Simulation (Engine Analyzer Pro)
+The V-Rod engine features unequal-length exhaust headers (Rinehart 2-1: Front 72 cm / Rear 85 cm). To compensate for volumetric efficiency (VE) differences, an asymmetric intake system was calculated:
 
-* **Front Stack:** 12.7 см — компенсирует короткий выхлоп, создает инерционный наддув на 6500-7000 RPM.
-* **Rear Stack:** 9.5 см — позволяет цилиндру дышать на 8500-9000 RPM.
+* **Front Stack:** 12.7 cm — compensates for the short exhaust header, creating inertial supercharging (ram effect) at 6500-7000 RPM.
+* **Rear Stack:** 9.5 cm — allows the cylinder to breathe effectively at 8500-9000 RPM.
 
-Моделирование доказало, что на 2250 RPM потоки (CFM) уравновешиваются, что позволило провести идеальную механическую синхронизацию ITB.
+The simulation proved that at exactly 2250 RPM, the airflow (CFM) between the two cylinders balances out, providing the perfect point for mechanical ITB synchronization.
 
 <img src="Engine_Analyzer_Pro/2250_sync.png" width="600">
 
 ---
 
-## 💻 Софт и Телеметрия (Data Engineering & Tuning)
-Для настройки нестандартного железа была использована система **Daytona Twin Tec (Alpha-N)**.
+##  Software & Telemetry (Data Engineering & Tuning)
+The **Daytona Twin Tec (Alpha-N)** system was used to tune this custom hardware setup.
 
-* **Data Logging:** Написаны скрипты на Python для парсинга, фильтрации аппаратного шума и агрегации сырых логов.
-* **Синхронизация:** Анализ `MAP Delta` подтвердил идеальную механическую сборку (разница на холостом ходу составила всего 0.03 in-Hg).
+* **Data Logging:** Custom Python scripts were written to parse, filter hardware noise, and aggregate raw logs.
+* **Synchronization:** The `MAP Delta` analysis confirmed a flawless mechanical assembly (the vacuum difference at idle was only 0.03 in-Hg).
 
 <img src="Telemetry_Logs/map_front-rear_in-hg.png" width="600">
 <img src="Telemetry_Logs/DTT_front_trim_table.png" width="600">
 
 ---
 
-## 🚀 Результат
-Полностью рабочая, откалиброванная система, превосходящая заводские аналоги по надежности (нержавеющая сталь + ЛС59-1) и аэродинамике. Идеальный холостой ход и ровная полка мощности до 9500 RPM.
-```
+##  Results
+A fully functional and calibrated system that surpasses factory analogs in reliability (stainless steel + hard brass) and aerodynamics. Achieved a perfect idle and a smooth, flat power band up to 9500 RPM.
