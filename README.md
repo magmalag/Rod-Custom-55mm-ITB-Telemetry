@@ -39,7 +39,7 @@ The simulation proved that at exactly 2250 RPM, the airflow (CFM) between the tw
 The **Daytona Twin Tec (Alpha-N)** system was used to tune this custom hardware setup.
 
 * **Data Logging:** Custom Python scripts were written to parse, filter hardware noise, and aggregate raw logs.
-* **Synchronization:** The `MAP Delta` analysis confirmed a flawless mechanical assembly (the vacuum difference at idle was only 0.03 in-Hg).
+* **Synchronization:** The `MAP Delta` analysis confirmed a flawless mechanical assembly (the vacuum difference at idle was only 0.17 in-Hg).
 
 <img src="Telemetry_Logs/map_front-rear_in-hg.png" width="600">
 <img src="Telemetry_Logs/DTT_front_trim_table.png" width="600">
