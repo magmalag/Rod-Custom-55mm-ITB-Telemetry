@@ -14,8 +14,7 @@ Stock throttle shafts and butterfly valves cannot withstand the increased load w
 * **Throttle Bodies:** Bored out to 55.5mm.
 * **Shafts (Split Shaft):** Custom 8mm stainless steel split shafts. Screws were secured using the ball-staking method (aviation standard) to prevent failure from severe V-Twin vibrations. PTFE bearings were installed for smooth operation.
 * **Butterfly Valves:** Machined from hard free-cutting brass (LS59-1 / CuZn39Pb2 equivalent, 1.5mm thick). 
-* **Geometry:** Modeled as an ellipse at a 4.5° angle. A critical 23-micron (0.023 mm) interference gap near the shaft was calculated and eliminated in CAD, ensuring 100% sealing when the throttle is closed (perfectly stabilizing the IAC control).
-
+* **Geometry:** Modeled as an ellipse at a 4.5° angle. A critical 23-micron (0.023 mm) interference gap near the shaft was calculated and eliminated in CAD.
 <img src="Images/IMG_20260406_121059.jpg" width="600">
 <img src="Images/IMG_20260406_121208.jpg" width="600">
 <img src="Images/IMG_20260406_121253.jpg" width="600">
