@@ -32,7 +32,7 @@ The V-Rod engine features unequal-length exhaust headers (Rinehart 2-1: Front 72
 The simulation proved that at exactly 2250 RPM, the airflow (CFM) between the two cylinders balances out, providing the perfect point for mechanical ITB synchronization.
 
 <img src="Engine_Analyzer_Pro/2250_sync.png" width="600">
-
+<img src="Engine_Analyzer_Pro/calc_data.png" width="600">
 ---
 
 ##  Software & Telemetry (Data Engineering & Tuning)
