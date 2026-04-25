@@ -34,7 +34,7 @@ Deep modernization, custom 55mm throttle bodies, asymmetric intake calculation, 
 Моделирование доказало, что на 2250 RPM потоки (CFM) уравновешиваются, что позволило провести идеальную механическую синхронизацию ITB.
 
 <img src="Engine_Analyzer_Pro/2250_sync.png" width="600">
-
+<img src="Engine_Analyzer_Pro/calc_data.png" width="600">
 ---
 
 ##  Софт и Телеметрия (Data Engineering & Tuning)
@@ -50,4 +50,7 @@ Deep modernization, custom 55mm throttle bodies, asymmetric intake calculation, 
 
 ##  Результат
 Полностью рабочая, откалиброванная система, превосходящая заводские аналоги по надежности (нержавеющая сталь + ЛС59-1) и аэродинамике. Идеальный холостой ход и ровная полка мощности до 9500 RPM.
-```
+
+<img src="Images/IMG_20240316_123650.jpg" width="600">
+
+---
